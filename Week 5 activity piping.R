@@ -53,14 +53,14 @@ piping<-mysample %>%
 View(mysample)
 
 
-#TASK: revise this code chunk using piping
-mysample2<-mysample
-arrange(mysample2, date)
-mysample2<-filter(mysample2, spi1<80)
-mysample2<-rename(mysample2, Index1 = spi1, Index2 = spi2)
-mysample3<-select(mysample2, Index1, Index2, team1, team2 )
-mysample4<-summary(mysample3)
-print(mysample4)
+#TASK: revise this code chunk using piping -added line 73
+# mysample2<-mysample
+# arrange(mysample2, date)
+# mysample2<-filter(mysample2, spi1<80)
+# mysample2<-rename(mysample2, Index1 = spi1, Index2 = spi2)
+# mysample3<-select(mysample2, Index1, Index2, team1, team2 )
+# mysample4<-summary(mysample3)
+# print(mysample4)
 
 #The arrange line works slightly differently below, as updates it the 'updated sample'
 #variable. In the original code,the result of the arrange function was just printed
