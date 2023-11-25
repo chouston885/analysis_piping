@@ -26,6 +26,7 @@ football_dataset=download.file(url = "https://projects.fivethirtyeight.com/socce
 WorldCup<- read.csv("WorldCup.csv")
 WorldCup
 #TASK: take a look at the World Cup data. 
+View(WorldCup)
 
 #TASK: Install and call the dplyr package. 
 install.packages('dplyr')
@@ -36,7 +37,8 @@ mysample<-sample_n(WorldCup, size=15, replace = FALSE, weight = NULL, .env = NUL
 
 #TASK: Save the new sample as a csv file
 write.csv(mysample, "sampled_worldcup.csv")
-
+temp_sample<- read.csv("sampled_worldcup.csv")
+View(temp_sample)
 #Now let's have some fun with *piping*
 
 #we will use our mysample dataset
